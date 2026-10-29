@@ -1,0 +1,6 @@
+# build output of build.bat
+*.exe
+*.dll
+*.obj
+*.exp
+*.lib

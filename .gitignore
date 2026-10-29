@@ -361,3 +361,9 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+# Python
+__pycache__/
+*.pyc
+
+# personal settings of the Python meter
+python/pd2dps_meter.json

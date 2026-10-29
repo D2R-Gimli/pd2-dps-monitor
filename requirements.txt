@@ -1,0 +1,4 @@
+# PD2 DPS Meter - Python tools (python/pd2dps_meter.py, tools/analyze_dps.py)
+#
+# Python 3.13 (Windows). Only the standard library is used, including tkinter, which is
+# part of the python.org installer ("tcl/tk and IDLE" option). No packages to install.

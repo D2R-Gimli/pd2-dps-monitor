@@ -1,13 +1,22 @@
-// pch.h: esse é um arquivo de cabeçalho pré-compilado.
-// Os arquivos listados a seguir são compilados somente uma vez, melhorando o desempenho dos builds futuros.
-// Isso também afeta o desempenho do IntelliSense, incluindo a conclusão de código e muitos recursos de navegação de código.
-// No entanto, os arquivos listados aqui serão TODOS recompilados se qualquer um deles for atualizado entre builds.
-// Não adicione aqui arquivos que você atualizará com frequência, pois isso anula a vantagem de desempenho.
-
+// pch.h - precompiled header. Only rarely changing system/library headers belong here.
 #ifndef PCH_H
 #define PCH_H
 
-// adicione os cabeçalhos que você deseja pré-compilar aqui
 #include "framework.h"
 
-#endif //PCH_H
+#include <windowsx.h>
+#include <objidl.h>      // required by gdiplus.h when WIN32_LEAN_AND_MEAN is set
+#include <gdiplus.h>     // logo loading (BMP/PNG/JPG) and scaling
+#include <shellapi.h>    // ShellExecuteW (open log folder)
+
+#include <cstdint>
+#include <cstdio>
+#include <cstring>
+#include <string>
+#include <vector>
+#include <deque>
+#include <unordered_map>
+#include <mutex>
+#include <atomic>
+
+#endif // PCH_H
